@@ -6,8 +6,18 @@ title: "Home"
 
 This is a personal website created by Jieqi Tu.
 
-This site was made for the homework 4 of the Data Science course.
+This site was made for the homework 4 of the Data Science course. The landing page would provide two links.
 
 To access the resume page, click [here](resume.html).
 
 To access the dashboard page, click [here](dashboard.html). 
+
+### About Jieqi
+
+I am a student in Biostatistics major at Columbia University Medical Center.
+
+I come from Hunan, which is a province in the middle area of China. My home city is Changsha, and I miss it very much!!
+
+A glance of Changsha:
+<img src="image/Changsha.jpg" style="width:55%">
+
