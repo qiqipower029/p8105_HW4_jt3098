@@ -3,3 +3,6 @@ title: "resume"
 ---
 
 This is the resume page on Jieqi Tu's website.
+
+<img src="images/ID3.jpeg" style="width:100%">
+
