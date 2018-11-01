@@ -1,0 +1,13 @@
+---
+title: "Home"
+---
+
+### About this site
+
+This is a personal website created by Jieqi Tu.
+
+This site was made for the homework 4 of the Data Science course.
+
+To access the resume page, click [here](resume.html).
+
+To access the dashboard page, click [here](dashboard.html). 

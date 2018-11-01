@@ -1,0 +1,82 @@
+---
+title: "Dashboard Plots/Jieqi Tu"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+```{r}
+library(tidyverse)
+library(viridis)
+## Loading required package: viridisLite
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r importing data and data manipulation}
+# Import data from a csv file
+data("instacart")
+instacart_data = instacart
+# Analyze data from only several departments
+instacart_total_orders = 
+  instacart_data %>%
+  group_by(department, department_id) %>%
+  # Calculate the total number of orders in each department
+  summarise(order_total = n()) 
+
+instacart_dayssince = 
+  instacart_data %>%
+  group_by(department) %>%
+  # Calculate the average days since prior order by different departments
+  summarise(mean_dayssince = mean(days_since_prior_order, na.rm = TRUE))
+
+```
+
+Column {data-width=550}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r Chart A}
+# Making a barplot using plotly function
+instacart_total_orders %>%
+  plot_ly(x = ~department_id, y = ~order_total, type = "bar", alpha = 0.5, color = ~department) %>%
+  layout(
+    title = "The Number of Orders in Different Departments",
+    xaxis = list(title = "Department ID"),
+    yaxis = list(title = "The Number of Orders in Total")
+  )
+```
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r Chart B}
+instacart_dayssince %>%
+  plot_ly(x = ~department, y = ~mean_dayssince, type = "scatter") %>%
+  layout(
+    title = "Average Days Since Prior Order By Departments",
+    xaxis = list(title = "Department"),
+    yaxis = list(title = "Average Days")
+  )
+```
+
+### Chart C
+
+```{r}
+instacart_data %>%
+  filter(aisle %in% c("fresh fruits", "milk", "bread", "latino foods", "yogurt")) %>%
+  plot_ly(x = ~aisle, y = ~order_hour_of_day, type = "box") %>%
+  layout(
+    title = "Boxplot of Order Hour of Day in 5 Aisles",
+    xaxis = list(title = "Aisle"),
+    yaxis = list(title = "Order Hour of Day")
+  )
+```
+
