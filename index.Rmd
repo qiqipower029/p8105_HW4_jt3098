@@ -19,5 +19,5 @@ I am a student in Biostatistics major at Columbia University Medical Center.
 I come from Hunan, which is a province in the middle area of China. My home city is Changsha, and I miss it very much!!
 
 A glance of Changsha:
-<img src="image/Changsha.jpg" style="width:55%">
+<img src="images/Changsha.jpg" style="width:100%">
 
