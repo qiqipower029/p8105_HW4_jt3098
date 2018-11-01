@@ -1,8 +1,8 @@
 ---
-title: "resume"
+title: "Resume"
 ---
 
 This is the resume page on Jieqi Tu's website.
 
-<img src="images/ID3.jpeg" style="width:100%">
+<img src="images/ID3.jpeg" style="width:15%">
 
