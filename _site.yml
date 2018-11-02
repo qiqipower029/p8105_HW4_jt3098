@@ -3,8 +3,8 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "Home"
-      href: home.html
+    - text: "Jieqi's LinkdIn"
+      href: https://www.linkedin.com/in/jieqi-tu-307a9190/
     - icon: fa-envelope fa-lg
       href: mailto:<jt3098@cumc.columbia.com>
     - icon: fa-github fa-lg

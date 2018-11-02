@@ -6,3 +6,8 @@ This is the resume page on Jieqi Tu's website.
 
 <img src="images/ID3.jpeg" style="width:15%">
 
+<img src="images/CV1.jpg" style="width:100%">
+<img src="images/CV2.jpg" style="width:100%">
+<img src="images/CV3.jpg" style="width:100%">
+<img src="images/CV4.jpg" style="width:100%">
+<img src="images/CV5.jpg" style="width:100%">
